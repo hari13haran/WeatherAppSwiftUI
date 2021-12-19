@@ -11,6 +11,10 @@
 		34A15A97276DC869000D062B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A15A96276DC869000D062B /* ContentView.swift */; };
 		34A15A99276DC86A000D062B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A15A98276DC86A000D062B /* Assets.xcassets */; };
 		34A15A9C276DC86A000D062B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A15A9B276DC86A000D062B /* Preview Assets.xcassets */; };
+		34A15AA4276DCC35000D062B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A15AA3276DCC35000D062B /* LocationManager.swift */; };
+		34A15AA7276DD435000D062B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A15AA6276DD435000D062B /* WelcomeView.swift */; };
+		34A15AA9276DE9EC000D062B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A15AA8276DE9EC000D062B /* LoadingView.swift */; };
+		34A15AAB276DF024000D062B /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A15AAA276DF024000D062B /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		34A15A96276DC869000D062B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34A15A98276DC86A000D062B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A15A9B276DC86A000D062B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34A15AA3276DCC35000D062B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		34A15AA6276DD435000D062B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		34A15AA8276DE9EC000D062B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		34A15AAA276DF024000D062B /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				34A15A94276DC869000D062B /* WeatherAppApp.swift */,
-				34A15A96276DC869000D062B /* ContentView.swift */,
+				34A15AA2276DCBF7000D062B /* Managers */,
+				34A15AA5276DD369000D062B /* Views */,
 				34A15A98276DC86A000D062B /* Assets.xcassets */,
 				34A15A9A276DC86A000D062B /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				34A15A9B276DC86A000D062B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34A15AA2276DCBF7000D062B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				34A15AA3276DCC35000D062B /* LocationManager.swift */,
+				34A15AAA276DF024000D062B /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		34A15AA5276DD369000D062B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34A15A96276DC869000D062B /* ContentView.swift */,
+				34A15AA6276DD435000D062B /* WelcomeView.swift */,
+				34A15AA8276DE9EC000D062B /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A15AAB276DF024000D062B /* WeatherManager.swift in Sources */,
 				34A15A97276DC869000D062B /* ContentView.swift in Sources */,
 				34A15A95276DC869000D062B /* WeatherAppApp.swift in Sources */,
+				34A15AA4276DCC35000D062B /* LocationManager.swift in Sources */,
+				34A15AA9276DE9EC000D062B /* LoadingView.swift in Sources */,
+				34A15AA7276DD435000D062B /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
